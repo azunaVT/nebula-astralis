@@ -8,4 +8,4 @@ android:
     package: "me.nikl.bevygame" # Todo
     version_code: 3 # Todo you should start at 1
     application:
-      label: "Bevy game" # Todo
+      label: "Nebula Astralis" # Todo

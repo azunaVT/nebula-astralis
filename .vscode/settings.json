@@ -1,0 +1,9 @@
+{
+    "lldb.displayFormat": "auto",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands",
+    "lldb.showDisassembly": "auto",
+    "rust-analyzer.cargo.extraEnv": {
+        "RUSTFLAGS": "-Clinker=rust-lld.exe"
+    }
+}

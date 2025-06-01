@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "vadimcn.vscode-lldb",
+        "fill-labs.dependi",
+        "tamasfe.even-better-toml",
+        "dustypomerleau.rust-syntax",
+        "zhangyue.rust-mod-generator"
+    ]
+}
