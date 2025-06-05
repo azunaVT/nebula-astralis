@@ -18,13 +18,13 @@
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=nebula_astralis", // ToDo: Change bin/package titles
-                    "--package=nebula_astralis", // ToDo: Change bin/package titles
+                    "--bin=nebula_astralis",
+                    "--package=azuna.nebula_astralis",
                     "--features",
                     "dev_mode",
                 ],
                 "filter": {
-                    "name": "nebula_astralis", // ToDo: Change bin/package titles
+                    "name": "nebula_astralis",
                     "kind": "bin"
                 },
             },
@@ -54,13 +54,13 @@
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=nebula_astralis", // ToDo: Change bin/package titles
-                    "--package=nebula_astralis", // ToDo: Change bin/package titles
+                    "--bin=nebula_astralis",
+                    "--package=azuna.nebula_astralis",
                     "--features",
                     "dev_mode",
                 ],
                 "filter": {
-                    "name": "nebula_astralis", // ToDo: Change bin/package titles
+                    "name": "nebula_astralis",
                     "kind": "bin"
                 }
             },
@@ -80,11 +80,11 @@
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=nebula_astralis", // ToDo: Change bin/package titles
-                    "--package=nebula_astralis", // ToDo: Change bin/package titles
+                    "--bin=nebula_astralis",
+                    "--package=azuna.nebula_astralis",
                 ],
                 "filter": {
-                    "name": "nebula_astralis", // ToDo: Change bin/package titles
+                    "name": "nebula_astralis",
                     "kind": "bin"
                 }
             },

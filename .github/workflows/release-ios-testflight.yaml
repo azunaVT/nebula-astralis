@@ -16,7 +16,6 @@ on:
         required: true
         type: string
 
-# ToDo: adapt names
 env:
   # used for uploading the app to a GitHub release
   GAME_EXECUTABLE_NAME: nebula_astralis
