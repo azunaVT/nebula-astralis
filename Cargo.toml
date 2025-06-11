@@ -2,7 +2,10 @@
 name = "nebula_astralis"
 version = "0.1.0"
 publish = false
-authors = ["AzunaVT <azunavt@gmail.com>"]
+authors = [
+    "AzunaVT <azunavt@gmail.com>",
+    "Demelary <git@temp.com>"
+]
 edition = "2021"
 exclude = ["dist", "build", "assets", "credits"]
 
