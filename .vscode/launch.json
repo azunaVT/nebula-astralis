@@ -19,7 +19,7 @@
                 "args": [
                     "build",
                     "--bin=nebula_astralis",
-                    "--package=azuna.nebula_astralis",
+                    "--package=nebula_astralis",
                     "--features",
                     "dev_mode",
                 ],
