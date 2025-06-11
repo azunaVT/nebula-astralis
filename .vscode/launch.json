@@ -81,7 +81,7 @@
                     "test",
                     "--no-run",
                     "--bin=nebula_astralis",
-                    "--package=azuna.nebula_astralis",
+                    "--package=nebula_astralis",
                 ],
                 "filter": {
                     "name": "nebula_astralis",
