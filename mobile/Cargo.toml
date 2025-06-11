@@ -9,7 +9,7 @@ name = "mobile"
 crate-type = ["staticlib", "cdylib"]
 
 [dependencies]
-bevy_game = { path = ".." } # ToDo
+nebula_astralis = { path = ".." }
 bevy = { version = "0.16.0", default-features = false, features = ["android-native-activity"] }
 
 [target."cfg(target_os = \"ios\")".dependencies]
@@ -19,8 +19,8 @@ objc2-avf-audio = { version = "0.3.0", features = [
 ] }
 
 [package.metadata.android]
-package = "me.nikl.bevygame"  # ToDo
-apk_name = "BevyGame"  # ToDo same as GAME_OSX_APP_NAME in release workflow
+package = "azuna.nebula_astralis"
+apk_name = "Nebula Astralis"
 assets = "../assets"
 strip = "strip"
 resources = "../build/android/res"
@@ -31,4 +31,4 @@ target_sdk_version = 35
 
 [package.metadata.android.application]
 icon = "@mipmap/icon"
-label = "Bevy Game" # ToDo
+label = "Nebula Astralis"

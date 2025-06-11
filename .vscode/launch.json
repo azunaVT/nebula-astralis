@@ -9,7 +9,7 @@
             "name": "Quick Launch",
             "type": "node-terminal",
             "request": "launch",
-            "command": "cargo run --features dev",
+            "command": "cargo run --features dev_mode",
         },
         {
             "type": "lldb",
@@ -18,13 +18,13 @@
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=bevy_game",
-                    "--package=bevy_game",
+                    "--bin=nebula_astralis",
+                    "--package=nebula_astralis",
                     "--features",
-                    "dev"
+                    "dev_mode",
                 ],
                 "filter": {
-                    "name": "bevy_game",
+                    "name": "nebula_astralis",
                     "kind": "bin"
                 },
             },
@@ -39,6 +39,37 @@
                     "CARGO_MANIFEST_DIR": "${workspaceFolder}",
                     "LD_LIBRARY_PATH": "${env:LD_LIBRARY_PATH}:${workspaceFolder}/target/debug:${env:HOME}/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib:${env:HOME}/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib"
                 }
+            },
+            "windows": {
+                "env": {
+                    "CARGO_MANIFEST_DIR": "${workspaceFolder}",
+                    "PATH": "${workspaceFolder}/target/debug/deps;${env:USERPROFILE}\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib;${env:PATH}" // for windows
+                }
+            }
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'nebula_astralis'", // ToDo: Change bin/package titles
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=nebula_astralis",
+                    "--package=azuna.nebula_astralis",
+                    "--features",
+                    "dev_mode",
+                ],
+                "filter": {
+                    "name": "nebula_astralis",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}",
+
+            "env": {
+                "CARGO_MANIFEST_DIR": "${workspaceFolder}",
+                "PATH": "${workspaceFolder}/target/debug/deps;${env:USERPROFILE}\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib;${env:PATH}" // for windows
             }
         },
         {
@@ -49,13 +80,11 @@
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=bevy_game",
-                    "--package=bevy_game",
-                    "--features",
-                    "dev"
+                    "--bin=nebula_astralis",
+                    "--package=nebula_astralis",
                 ],
                 "filter": {
-                    "name": "bevy_game",
+                    "name": "nebula_astralis",
                     "kind": "bin"
                 }
             },

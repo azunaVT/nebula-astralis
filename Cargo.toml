@@ -1,8 +1,11 @@
 [package]
-name = "bevy_game" # ToDo
+name = "nebula_astralis"
 version = "0.1.0"
 publish = false
-authors = ["Niklas Eicker <git@nikl.me>"] # ToDo: you are the author ;)
+authors = [
+    "AzunaVT <azunavt@gmail.com>",
+    "Demelary <git@temp.com>"
+]
 edition = "2021"
 exclude = ["dist", "build", "assets", "credits"]
 
@@ -32,8 +35,11 @@ codegen-units = 1
 strip = true
 
 [features]
-dev = [
+dev_mode = [
     "bevy/dynamic_linking",
+]
+debug_mode = [
+   "bevy_mod_debugdump"
 ]
 
 # All of Bevy's default features exept for the audio related ones (bevy_audio, vorbis), since they clash with bevy_kira_audio
@@ -82,6 +88,9 @@ winit = { version = "0.30", default-features = false }
 image = { version = "0.25", default-features = false }
 ## This greatly improves WGPU's performance due to its heavy use of trace! calls
 log = { version = "0.4", features = ["max_level_debug", "release_max_level_warn"] }
+
+# Debugging
+bevy_mod_debugdump = { version = "0.12.1", optional = true }
 
 [build-dependencies]
 embed-resource = "1"
